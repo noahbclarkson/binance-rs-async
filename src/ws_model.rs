@@ -300,7 +300,7 @@ pub struct CombinedStreamEvent<T> {
     pub data: T,
 }
 
-///
+/// Websocket event untagged
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum WebsocketEventUntag {
@@ -322,7 +322,7 @@ impl<T> CombinedStreamEvent<T> {
 }
 
 /// User Stream related events
-
+///
 /// Account position update
 #[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]
